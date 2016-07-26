@@ -10,7 +10,7 @@ Typical MESH networks are great on paper but difficult and error prone in practi
 
 Design goals:
 - self-reliant: power (solar?) + ESP8266 is all you need, no existing infrastructure
-- one directional: sensor data should flow out of the network, no commands coming into the network (unless I find a way to do this, udp multicast maybe?)
+- one directional: sensor data should flow out of the network, no commands coming into the network (unless I find a way to do this, udp broadcast maybe?)
 - OTA: despite the one directionality principle above, OTA should be possible
 - dynamic: adding a module, an extra base station or removing a module will automatically trigger a network reconfiguration
 - semi-reliable: during short periods of network reconfiguration, messages should not be lost (message delivery to the next hop is guaranteed)
